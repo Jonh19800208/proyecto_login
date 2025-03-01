@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Check if admin
-    if (currentUser.email === 'admin@admin.com' && currentUser.password === 'admin123') {
+    if (currentUser.email === 'admin123@gmail.com' && currentUser.password === 'admin123') {
         adminPanel.style.display = 'block';
         renderAdminPanel();
     } else if (currentUser.allowed) {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderAdminPanel() {
         userList.innerHTML = '';
         users.forEach(user => {
-            if (user.email !== 'admin@admin.com') {
+            if (user.email !== 'admin123@gmail.com') {
                 const userDiv = document.createElement('div');
                 userDiv.className = 'user-item';
                 userDiv.innerHTML = `
