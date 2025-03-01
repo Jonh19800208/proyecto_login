@@ -10,6 +10,21 @@
 <body>
     <section>
         <h1>Home</h1>
+        <div id="dashboard" style="display: none;">
+            <div class="dashboard-buttons">
+                <button onclick="window.location.href='page1.html'">Page 1</button>
+                <button onclick="window.location.href='page2.html'">Page 2</button>
+                <button onclick="window.location.href='page3.html'">Page 3</button>
+                <button onclick="window.location.href='page4.html'">Page 4</button>
+                <button onclick="window.location.href='page5.html'">Page 5</button>
+                <button onclick="window.location.href='page6.html'">Page 6</button>
+                <button onclick="window.location.href='page7.html'">Page 7</button>
+            </div>
+        </div>
+        <div id="adminPanel" class="admin-panel" style="display: none;">
+            <h2>Admin Panel</h2>
+            <div id="userList" class="user-list"></div>
+        </div>
         <button id="logout">Logout</button>
     </section>
     <script src="js/index.js"></script>
